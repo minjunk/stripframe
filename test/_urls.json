@@ -1,0 +1,22 @@
+{
+  "frame": [
+    {
+      "url": "http://blogpeople.blog.me/220957996267",
+      "equalUrl": "http://blog.naver.com/blogpeople/220957996267?"
+    },
+    {
+      "url": "http://blog.naver.com/blogpeople/220957996267?",
+      "equalUrl": "/PostView.nhn?blogId=blogpeople&logNo=220957996267&redirect=Dlog&widgetTypeCall=true"
+    },
+    {
+      "url": "http://blog.daum.net/cafe_notice/2660",
+      "equalUrl": "/_blog/BlogTypeView.do?blogid=0PUiG&amp;articleno=2660&amp;admin="
+    }
+  ],
+  "error":  [
+    {
+      "url": "http://blog.naver.com",
+      "equalUrl": null
+    }
+  ]
+}
