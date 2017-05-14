@@ -1,6 +1,6 @@
 {
   "name": "stripframe",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Find the hidden web page in the frame.",
   "main": "index.js",
   "scripts": {

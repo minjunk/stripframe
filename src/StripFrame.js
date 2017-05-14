@@ -33,19 +33,28 @@ export default class StripFrame {
     return frame.length && frame[0];
   }
 
+  /**
+   * 찾은 프레임의 attribute를 반환
+   * @param {String} name 반환 될 Attribute name
+   * @return {String}
+   */
   attr(name) {
     var frame = this.frame();
     return (frame || null) && (name ? frame.attribs[name] : frame.attribs);
   }
 
+  /**
+   * 찾은 프레임의 src attribute를 반환
+   * @return {String} this.attr('src')
+   */
   url() {
     return this.attr('src');
   }
 
   /**
    * frameset을 거쳐서 frame을 찾음
-   * @param  {Array}  dom htmlparser Array
-   * @return {Object}     찾은 frame 태그를 object로 반환
+   * @param {Array} dom htmlparser Array
+   * @return {Object} 찾은 frame 태그를 object로 반환
    */
   findFrame(dom) {
     // frameset를 탐색
@@ -63,8 +72,8 @@ export default class StripFrame {
   /**
    * frameset의 rows/cols 에서 발견된 value값으로
    * 값이 큰 frame의 index를 찾음
-   * @param  {String} value rows/cols 값
-   * @return {Number}       찾은 index 값
+   * @param {String} value rows/cols 값
+   * @return {Number} 찾은 index 값
    */
   frameIndex(value) {
     const arr = value.toString().split(',')
