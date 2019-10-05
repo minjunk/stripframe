@@ -47,9 +47,9 @@ describe('utils.js', () => {
     });
 
     it(`findTag({htmlparser2 domArray}, 'frame')`, () => {
-      frameData.forEach((data, idx) => {
+      frameData.forEach(data => {
         const dom = htmlparser.parseDOM(data);
-        expect(findTag(dom, 'frame')).to.have.lengthOf(idx === 0 ? 1 : 2);
+        expect(findTag(dom, 'frame')).to.have.lengthOf(2);
         expect(findTag(dom, 'frame')).to.have.deep.property('[0].type', 'tag');
         expect(findTag(dom, 'frame')).to.have.deep.property('[0].name', 'frame');
       });

@@ -7,7 +7,15 @@
     "mocha": true,
     "browser": true
   },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
   "rules": {
-    "strict": 0
+    "strict": "off",
+    "no-console": "warn"
   }
 }

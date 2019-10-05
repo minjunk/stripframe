@@ -4,32 +4,36 @@
   "description": "Find the hidden web page in the frame.",
   "main": "index.js",
   "scripts": {
-    "prebuild": "npm run clean && npm test",
+    "prebuild": "run-s clean test",
     "build": "babel src --out-dir lib",
     "lint": "eslint --ext js src test",
-    "pretest": "npm run lint",
+    "pretest": "run-s lint",
     "test": "mocha --require babel-register",
     "clean": "rimraf lib",
-    "prepare": "npm run build"
+    "prepare": "run-s build"
   },
   "author": "Minjun Kim <me@minjun.kim>",
   "license": "MIT",
-  "repository": "minjunk/stripframe",
+  "repository": {
+    "type": "git",
+    "url": "github:minjunk/stripframe"
+  },
   "dependencies": {
-    "htmlparser2": "^3.9.2"
+    "htmlparser2": "3.9.2"
   },
   "devDependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.18.1",
     "babel-cli": "^6.24.0",
     "babel-eslint": "^7.2.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-register": "^6.24.0",
     "chai": "^3.5.0",
-    "eslint": "^3.18.0",
+    "eslint": "^4.18.2",
     "eslint-plugin-import": "^2.2.0",
     "in-publish": "^2.0.0",
     "mocha": "^3.2.0",
+    "npm-run-all": "^4.1.5",
     "rimraf": "^2.6.1"
   }
 }
