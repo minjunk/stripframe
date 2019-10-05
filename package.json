@@ -4,13 +4,11 @@
   "description": "Find the hidden web page in the frame.",
   "main": "index.js",
   "scripts": {
-    "prebuild": "run-s clean test",
     "build": "babel src --out-dir lib",
     "lint": "eslint --ext js src test",
     "pretest": "run-s lint",
     "test": "mocha --require babel-register",
-    "clean": "rimraf lib",
-    "prepare": "run-s build"
+    "clean": "rimraf lib"
   },
   "author": "Minjun Kim <me@minjun.kim>",
   "license": "MIT",
