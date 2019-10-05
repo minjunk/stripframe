@@ -1,5 +1,10 @@
 # stripframe
 
+[
+  ![npm](https://img.shields.io/npm/v/stripframe)
+  ![NPM](https://img.shields.io/npm/l/stripframe)
+](https://www.npmjs.com/package/stripframe)
+
 Find the hidden web page in the frame.
 
 ## Installation
